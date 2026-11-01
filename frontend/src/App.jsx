@@ -830,7 +830,7 @@ const MLInsights = ({ data }) => {
         )}
       </div>
 
-      {/* SMOTE Before/After Summary */}
+      /* {/* SMOTE Before/After Summary */}
       {smote.before_smote && (
         <FadeInSection>
           <div className="p-8 rounded-2xl bg-gradient-to-r from-card via-[#1e1a3b] to-card border border-purple-500/20 shadow-2xl relative overflow-hidden">
@@ -871,7 +871,7 @@ const MLInsights = ({ data }) => {
             </div>
           </div>
         </FadeInSection>
-      )}
+      )} */
     </section>
   )
 }
