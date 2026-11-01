@@ -1,9 +1,7 @@
-Visit: https://reforest-ai.onrender.com/
-
 # ReForest AI
 
 ## An Intelligent Machine Learning System for Forest Degradation Analysis, Carbon Emission Assessment, and Reforestation Prioritization
-
+Visit: https://reforest-ai.onrender.com/
 ## Overview
 
 **ReForest AI** is a machine learning-based web application designed to analyse forest degradation, assess carbon emissions, explore future forest-loss scenarios, and prioritise reforestation efforts across India.
@@ -148,8 +146,8 @@ ReForest-AI/
 ### 1. Clone the Repository
 
 ```bash
-git clone <YOUR_REPOSITORY_URL>
-cd ReForest-AI
+git clone https://github.com/bhavesh256/Reforestation-Intelligence.git
+cd Reforestation-Intelligence
 ```
 
 ### 2. Create a Virtual Environment
