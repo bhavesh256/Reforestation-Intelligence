@@ -829,49 +829,6 @@ const MLInsights = ({ data }) => {
           </FadeInSection>
         )}
       </div>
-
-      /* {/* SMOTE Before/After Summary */}
-      {smote.before_smote && (
-        <FadeInSection>
-          <div className="p-8 rounded-2xl bg-gradient-to-r from-card via-[#1e1a3b] to-card border border-purple-500/20 shadow-2xl relative overflow-hidden">
-            <div className="absolute top-0 right-0 w-64 h-64 bg-purple-500/10 rounded-full blur-[80px]" />
-            <h3 className="text-2xl font-bold text-white mb-8 flex items-center gap-3">
-              <div className="p-2 bg-purple-500/20 rounded-xl"><Zap size={24} className="text-purple-400" /></div>
-              SMOTE — Class Balance Overview
-            </h3>
-            <div className="grid grid-cols-1 md:grid-cols-[1fr_auto_1fr] gap-8 items-center">
-              <div className="text-center p-6 bg-black/20 rounded-xl border border-white/5">
-                <div className="text-sm uppercase tracking-widest text-text-muted font-bold mb-4">Before SMOTE</div>
-                <div className="text-5xl font-display font-bold text-white mb-2">{(smote.before_smote.accuracy * 100).toFixed(1)}<span className="text-2xl text-text-muted">%</span></div>
-                <div className="text-sm text-text-muted font-medium mb-6">Classification Accuracy</div>
-                <div className="grid grid-cols-3 gap-2 text-xs border-t border-white/10 pt-4">
-                  <div><div className="text-text-muted mb-1">Low</div><div className="font-bold text-white">{smote.before_smote.class_distribution.Low || 0}</div></div>
-                  <div><div className="text-text-muted mb-1">Med</div><div className="font-bold text-white">{smote.before_smote.class_distribution.Medium || 0}</div></div>
-                  <div><div className="text-text-muted mb-1">High</div><div className="font-bold text-white">{smote.before_smote.class_distribution.High || 0}</div></div>
-                </div>
-              </div>
-
-              <div className="flex justify-center hidden md:flex">
-                <div className="w-12 h-12 rounded-full bg-gradient-to-r from-white/10 to-purple-500/30 flex items-center justify-center border border-purple-500/30 animate-pulse">
-                  <ArrowRight size={20} className="text-purple-300" />
-                </div>
-              </div>
-
-              <div className="text-center p-6 bg-purple-900/20 rounded-xl border border-purple-500/30 shadow-[0_0_30px_rgba(168,85,247,0.15)] relative overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-b from-purple-500/5 to-transparent pointer-events-none" />
-                <div className="text-sm uppercase tracking-widest text-purple-400 font-bold mb-4">After SMOTE</div>
-                <div className="text-5xl font-display font-bold text-purple-400 mb-2 glow-text" style={{ textShadow: '0 0 20px rgba(168,85,247,0.4)' }}>{(smote.after_smote.accuracy * 100).toFixed(1)}<span className="text-2xl text-purple-400/50">%</span></div>
-                <div className="text-sm text-purple-300/80 font-medium mb-6">Classification Accuracy</div>
-                <div className="grid grid-cols-3 gap-2 text-xs border-t border-purple-500/20 pt-4 text-purple-100">
-                  <div><div className="text-purple-300/60 mb-1">Low</div><div className="font-bold">{smote.after_smote.class_distribution.Low || 0}</div></div>
-                  <div><div className="text-purple-300/60 mb-1">Med</div><div className="font-bold">{smote.after_smote.class_distribution.Medium || 0}</div></div>
-                  <div><div className="text-purple-300/60 mb-1">High</div><div className="font-bold">{smote.after_smote.class_distribution.High || 0}</div></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </FadeInSection>
-      )} */
     </section>
   )
 }
