@@ -210,7 +210,7 @@ The application is deployed using **Render**. Docker configuration files are als
 
 Add your live application URL here:
 
-**Live Demo:** `<YOUR_RENDER_URL>`
+**Live Demo:** https://reforest-ai.onrender.com/
 
 ## Future Scope
 
