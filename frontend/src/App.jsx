@@ -749,23 +749,6 @@ const MLInsights = ({ data }) => {
                     <div className="font-mono text-white text-sm">{m.train_r2.toFixed(4)}</div>
                   </div>
                 </div>
-
-                {/* Per-model SMOTE comparison */}
-                {smote.before_smote && (
-                  <div className="pt-3 border-t border-white/5">
-                    <div className="text-[10px] text-purple-400 uppercase tracking-wider mb-2 font-bold">SMOTE Impact</div>
-                    <div className="grid grid-cols-2 gap-2">
-                      <div className="p-2 bg-black/20 rounded-lg text-center">
-                        <div className="text-[9px] text-text-muted uppercase mb-1">Before</div>
-                        <div className="text-sm font-bold text-white">{(smote.before_smote.accuracy * 100).toFixed(1)}%</div>
-                      </div>
-                      <div className="p-2 bg-purple-900/20 rounded-lg text-center border border-purple-500/20">
-                        <div className="text-[9px] text-purple-400 uppercase mb-1">After</div>
-                        <div className="text-sm font-bold text-purple-400">{(smote.after_smote.accuracy * 100).toFixed(1)}%</div>
-                      </div>
-                    </div>
-                  </div>
-                )}
               </div>
             </SpotlightCard>
           </FadeInSection>
